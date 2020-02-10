@@ -7,6 +7,103 @@
     <meta name="description" content="A-Frame Effects - Spheres">
 
     <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+    <script src="https://cdn.rawgit.com/matthewbryancurtis/aframe-star-system-component/db4f1030/index.js"></script> 
+  </head>
+  <body>
+
+<a-scene
+  inspector=""
+  keyboard-shortcuts=""
+  screenshot=""
+  vr-mode-ui=""
+  device-orientation-permission-ui="">
+<a-entity camera="" position="134.782 16 100" wasd-controls="acceleration: 600; fly: true" rotation="-15.126085791453738 -23.491269600363772 0" look-controls="" aframe-injected="" data-aframe-inspector-original-camera=""></a-entity>
+
+<a-entity position="0 0 0" id="mainParent">
+
+<!-- ///////////////////////////////// SUN ///////////////////////////////// -->
+
+<a-light type="point" intensity="1.5" color="#F7F8E0" >
+<a-sphere rotation="0 0 0" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8916edc1-9f55-4601-b4e4-cb3ed07c19aa/da6zak-ae5a597f-d5ff-44b0-bb45-e43940046e82.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg5MTZlZGMxLTlmNTUtNDYwMS1iNGU0LWNiM2VkMDdjMTlhYVwvZGE2emFrLWFlNWE1OTdmLWQ1ZmYtNDRiMC1iYjQ1LWU0Mzk0MDA0NmU4Mi5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.V8WN-FEtGHKPJLQrvIewFnhewyjWs0zxrmWqprmuZ0k" id="sun" position="0 0 0" radius="69.634" material="" geometry="" scale="0.5 0.5 0.5" shader="flat">
+</a-sphere>
+</a-light>
+<!-- animation="property: object3D.rotation.y; to: 0 360 0; loop: true; dur: 9600; easing: linear"  -->
+<!-- ///////////////////////////////// MERCURY ///////////////////////////////// -->
+<a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 9600; easing: linear">
+<a-entity position="" 86.782="" 6="" 0""="" bmfont-text="color: White; text: Mercury the small one; align: center;" rotation="" scale="30 30 30" visible="" text__mercurytext="value: Mercury; xOffset: 1.82; zOffset: 0"></a-entity>
+<a-sphere src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6e527eb9-99dc-4554-9ea2-dd0e84e79860/dcklc0u-feeae0dc-f164-436a-8e75-5c9a7f3e3c71.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzZlNTI3ZWI5LTk5ZGMtNDU1NC05ZWEyLWRkMGU4NGU3OTg2MFwvZGNrbGMwdS1mZWVhZTBkYy1mMTY0LTQzNmEtOGU3NS01YzlhN2YzZTNjNzEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Rvqb6JB7rcl6c5uQgEh-wIHbhNeqiIe7arbgKfBwAmY" class="mercury" position="38.782 0 0" radius="0.244" material="" geometry="" scale="0.5 0.5 0.5">
+</a-sphere>
+</a-entity>
+<!-- ///////////////////////////////// VENUS ///////////////////////////////// -->
+<a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 24600; easing: linear">
+<a-entity position="" 86.782="" 6="" 0""="" bmfont-text="color: White; text: Mercury the small one; align: center;" rotation="" scale="30 30 30" visible="" text__mercurytext="value: Venus; xOffset: 1.91; zOffset: 0"></a-entity>
+<a-sphere src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2115d5b9-b53e-4f1d-81e4-1d21461eeb45/dboveom-b62885be-788e-4ddd-8a02-59177f2eb0e5.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzIxMTVkNWI5LWI1M2UtNGYxZC04MWU0LTFkMjE0NjFlZWI0NVwvZGJvdmVvbS1iNjI4ODViZS03ODhlLTRkZGQtOGEwMi01OTE3N2YyZWIwZTUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ChSxR56yv0It1OBfFAPKq78PwFj35HG8PsyH34IxgBM" class="venus" position="41.782 0 0" radius="0.605" material="" geometry="" scale="0.5 0.5 0.5">
+</a-sphere>
+</a-entity>
+<!-- ///////////////////////////////// EARTH ///////////////////////////////// -->
+<a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 40000; easing: linear">
+<a-entity position="" 86.782="" 6="" 0""="" bmfont-text="color: White; text: Earth; align: center;" rotation="" scale="30 30 30" visible="" text__earthtext="value: Earth; xOffset: 2.03; zOffset: 0"></a-entity>
+<a-sphere src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/space/earth_atmos_4096.jpg" class="earth" position="44.782 0 0" radius="0.637" material="" geometry="" scale="0.5 0.5 0.5" animation="property: object3D.rotation.y; to: 360; loop: true; easing: linear; dur: 5000">
+</a-sphere>
+</a-entity>
+<!-- ///////////////////////////////// MARS ///////////////////////////////// -->
+<a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 75200; easing: linear">
+<a-entity position="" 86.782="" 6="" 0""="" bmfont-text="color: White; text: Mars; align: center;" rotation="" scale="30 30 30" visible="" text__marstext="value: Mars; xOffset: 2.18; zOffset: 0"></a-entity>
+<a-sphere src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6e527eb9-99dc-4554-9ea2-dd0e84e79860/dckiu8c-727ad23f-7760-42f2-9669-aa2de0f3c832.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzZlNTI3ZWI5LTk5ZGMtNDU1NC05ZWEyLWRkMGU4NGU3OTg2MFwvZGNraXU4Yy03MjdhZDIzZi03NzYwLTQyZjItOTY2OS1hYTJkZTBmM2M4MzIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.SeaJeKBwBRMIF5PfyQWTZJ8x5_p6_oDCTy0GE3ldXUU" class="mars" position="49.782 0 0" radius="0.339" material="" geometry="" scale="0.5 0.5 0.5">
+</a-sphere>    
+</a-entity>
+<!-- ///////////////////////////////// JUPITER ///////////////////////////////// -->
+<a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 474400; easing: linear">
+<a-entity position="" 86.782="" 6="" 0="" bmfont-text="color: White; text: Jupiter the mighty one; align: center;" rotation="" scale="50 50 50" visible="" text__jupitertext="value: Jupiter; xOffset: 2.340; zOffset: 0"></a-entity>
+<a-sphere src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/58d3c051-62a0-4471-818b-b9b92759d6b6/db6is8m-065c1dbf-d125-4729-a015-f79553c16bf9.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzU4ZDNjMDUxLTYyYTAtNDQ3MS04MThiLWI5YjkyNzU5ZDZiNlwvZGI2aXM4bS0wNjVjMWRiZi1kMTI1LTQ3MjktYTAxNS1mNzk1NTNjMTZiZjkuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.SNbFKk_oSqXR_g0K2OquQKU33PDgktgkNc40-6Pjhqo" id="jupiter" position="86.782 0 0" radius="6.991" material="" geometry="" visible=""
+scale="0.5 0.5 0.5" animation="property: object3D.rotation.y; to: 360; loop: true; easing: linear; dur: 12000">
+</a-sphere> 
+</a-entity>
+<!-- ///////////////////////////////// SATURN ///////////////////////////////// -->
+<a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 1177600; easing: linear">
+<a-ring src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/c1827fcd-9fde-48eb-8da3-489166bd8542/d6xt63j-169c5f5a-9033-417c-a48a-496ec8d05f77.jpg" id="saturn-ring" scale="3.27 3.27 0.99" position="134.53966 0.41826 0.19427" geometry="radiusInner: 1.11; radiusOuter: 1.83" color="#C8AB81" material="opacity: 0.77; ambientOcclusionMapIntensity: 0; roughness: 1" rotation="-69.34794673365919 -94.41313139724731 -83.24732988573783" class="saturn-ring">
+</a-ring>
+<a-entity position="" 86.782="" 6="" 0="" bmfont-text="color: White; text: Saturn; align: center;" rotation="" scale="40 40 40" visible="" text__saturntext="value: Saturn; xOffset: 3.99; zOffset: 0"></a-entity>
+<a-sphere src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1912b050-3675-4394-a3d1-d0b4cb43ae0a/ddeq42t-e150d2ad-e6cb-46e6-9a4e-a908d9a170bb.png/v1/fill/w_1280,h_640,q_80,strp/saturn_texture_map__fictional_rework__by_magentameteorite_ddeq42t-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjQwIiwicGF0aCI6IlwvZlwvMTkxMmIwNTAtMzY3NS00Mzk0LWEzZDEtZDBiNGNiNDNhZTBhXC9kZGVxNDJ0LWUxNTBkMmFkLWU2Y2ItNDZlNi05YTRlLWE5MDhkOWExNzBiYi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.LGF7FBdknIVE7_swXfEFe__n-IF6D2IXNWk4fjPE8Oo" class="saturn" position="134.782 0 0" radius="5.823" material="" geometry="" scale="0.5 0.5 0.5">
+</a-sphere>
+</a-entity>  
+<!-- ///////////////////////////////// URANUS ///////////////////////////////// -->
+<a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 33600000; easing: linear">
+<a-entity position="" 86.782="" 6="" 0="" bmfont-text="color: White; text: Uranus; align: center;" rotation="" scale="50 50 50" visible="" text__uranustext="value: Uranus; xOffset: 5.11; zOffset: 0"></a-entity>
+<a-sphere src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1912b050-3675-4394-a3d1-d0b4cb43ae0a/dc18wwb-e195cd81-efbd-480a-9f51-5100a530683d.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE5MTJiMDUwLTM2NzUtNDM5NC1hM2QxLWQwYjRjYjQzYWUwYVwvZGMxOHd3Yi1lMTk1Y2Q4MS1lZmJkLTQ4MGEtOWY1MS01MTAwYTUzMDY4M2QuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.SL33h8GpzTu_M-WWzxQjyw0osVvDZ-NlEKmLkRLzZA8" class="uranus" position="226.782 0 0" radius="2.536" material="" geometry="" scale="0.5 0.5 0.5">
+</a-sphere>
+</a-entity>
+<!-- ///////////////////////////////// Neptune ///////////////////////////////// -->
+<a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 65900000; easing: linear">
+<a-entity position="" 86.782="" 6="" 0="" bmfont-text="color: White; text: Neptune; align: center;" rotation="" scale="40 40 40" visible="" text__neptunetext="value: Neptune; xOffset: 9.04; zOffset: 0"></a-entity>
+<a-sphere src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/90ad8232-4e09-4675-b9e7-bc2898960870/dbcjcv5-69d055cd-7d9c-4429-b766-37920ce255f9.png/v1/fill/w_1024,h_512,q_80,strp/neptune_texture_map_by_jcpag2010_dbcjcv5-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTEyIiwicGF0aCI6IlwvZlwvOTBhZDgyMzItNGUwOS00Njc1LWI5ZTctYmMyODk4OTYwODcwXC9kYmNqY3Y1LTY5ZDA1NWNkLTdkOWMtNDQyOS1iNzY2LTM3OTIwY2UyNTVmOS5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.tfCEIU_GWO03zWHxR1agTBSvhGIH-aPG0CfvsfXOsvk" class="neptune" position="338.782 0 0" radius="2.462" material="" geometry="" scale="0.5 0.5 0.5">
+</a-sphere>
+</a-entity>      
+<!-- ///////////////////////////////// RINGS OF SATURN ///////////////////////////////// -->
+
+<!-- <a-ring src=https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/c1827fcd-9fde-48eb-8da3-489166bd8542/d6xt63j-169c5f5a-9033-417c-a48a-496ec8d05f77.jpg position="-9.79032 1.91676 -0.76237" radius="1.25" material="" geometry="radiusInner: 0.97" scale="" rotation="-55 0.00 0.00">
+</a-ring>
+
+</a-entity> -->
+
+<a-sky color="#000"></a-sky>
+<a-entity star-system></a-entity>
+
+<div class="a-loader-title" style="display: none;"></div>
+</a-scene>
+</body>
+</html>
+=======
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Solar System</title>
+    <meta name="description" content="A-Frame Effects - Spheres">
+
+    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/matthewbryancurtis/aframe-star-system-component/db4f1030/index.js"></script> 
   </head>
   <body>
@@ -21,8 +118,7 @@
 
 
 <a-entity position="0 0 0" id="mainParent">
-<a-entity camera="" id="camera" class="camera" position="134.782 16 100" wasd-controls="acceleration: 600; fly: true" rotation="-15.126085791453738 -23.491269600363772 0" look-controls="" aframe-injected="" data-aframe-inspector-original-camera=""></a-entity>
-<a-entity position="134.782 1.6 100" id="rig" class="rig" tracked-controls vive-controls oculus-touch-controls laser-controls ></a-entity>
+<a-entity camera="" position="134.782 16 100" wasd-controls="acceleration: 600; fly: true" rotation="-15.126085791453738 -23.491269600363772 0" look-controls="" aframe-injected="" data-aframe-inspector-original-camera=""></a-entity>
 <!-- ///////////////////////////////// SUN ///////////////////////////////// -->
 
 <a-light type="point" intensity="1.5" color="#F7F8E0" >
@@ -95,3 +191,4 @@ scale="0.5 0.5 0.5" animation="property: object3D.rotation.y; to: 360; loop: tru
 </a-scene>
 </body>
 </html>
+>>>>>>> fc3b1c105e66c873baca6c56436ad3e607ef97c9
